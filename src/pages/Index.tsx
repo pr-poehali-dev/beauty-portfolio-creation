@@ -131,11 +131,12 @@ const Index = () => {
               </div>
             </div>
             <div className="animate-scale-in">
-              <img 
-                src="https://cdn.poehali.dev/files/882073f0-9781-40e8-b2fb-e9ca6a357b91.png" 
-                alt="Руслана Мишина" 
-                className="w-full rounded-2xl shadow-2xl"
-              />
+              <div className="w-full aspect-square bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl shadow-2xl flex items-center justify-center">
+                <div className="text-center">
+                  <Icon name="Sparkles" className="text-accent mx-auto mb-4" size={80} />
+                  <p className="text-muted-foreground text-lg">Профессиональный уход за кожей</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
