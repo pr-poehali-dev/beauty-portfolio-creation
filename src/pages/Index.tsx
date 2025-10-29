@@ -82,7 +82,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-border z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-primary">Татьяна Аль Сабунчи</h1>
+          <h1 className="text-2xl font-bold text-primary">Руслана Мишина</h1>
           <div className="hidden md:flex gap-8">
             <button onClick={() => scrollToSection('hero')} className="text-sm hover:text-accent transition-colors">Главная</button>
             <button onClick={() => scrollToSection('procedures')} className="text-sm hover:text-accent transition-colors">Процедуры</button>
@@ -100,7 +100,7 @@ const Index = () => {
             <div className="animate-fade-in">
               <p className="text-accent text-sm uppercase tracking-wider mb-4">Врач косметолог-дерматолог</p>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                Татьяна<br />Аль Сабунчи
+                Руслана<br />Мишина
               </h1>
               <p className="text-lg text-muted-foreground mb-8 max-w-lg">
                 Кандидат медицинских наук. Создаю естественную красоту с заботой о вашем здоровье. 
@@ -133,7 +133,7 @@ const Index = () => {
             <div className="animate-scale-in">
               <img 
                 src="https://cdn.poehali.dev/files/882073f0-9781-40e8-b2fb-e9ca6a357b91.png" 
-                alt="Татьяна Аль Сабунчи" 
+                alt="Руслана Мишина" 
                 className="w-full rounded-2xl shadow-2xl"
               />
             </div>
@@ -335,7 +335,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div>
-              <h3 className="text-2xl font-bold mb-2">Татьяна Аль Сабунчи</h3>
+              <h3 className="text-2xl font-bold mb-2">Руслана Мишина</h3>
               <p className="text-primary-foreground/60 text-sm">Врач косметолог-дерматолог, КМН</p>
             </div>
             <div className="flex gap-4">
@@ -351,7 +351,7 @@ const Index = () => {
             </div>
           </div>
           <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center text-sm text-primary-foreground/60">
-            <p>© 2024 Татьяна Аль Сабунчи. Все права защищены.</p>
+            <p>© 2024 Руслана Мишина. Все права защищены.</p>
           </div>
         </div>
       </footer>
