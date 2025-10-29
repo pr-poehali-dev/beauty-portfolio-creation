@@ -98,7 +98,7 @@ const Index = () => {
       </nav>
 
       <section id="hero" className="pt-20 min-h-screen flex items-center relative">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/39f9aadf-363b-4525-b734-31243bad6e64/files/660c0b15-bf2b-4665-8b1a-884a12f409f7.jpg)' }}>
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/39f9aadf-363b-4525-b734-31243bad6e64/files/97cee2f3-e500-4b2d-bffa-3d3054bffe28.jpg)' }}>
           <div className="absolute inset-0 bg-white/75 backdrop-blur-sm"></div>
         </div>
         <div className="container mx-auto px-4 py-20 relative z-10">
