@@ -100,6 +100,7 @@ const Index = () => {
             <button onClick={() => scrollToSection('procedures')} className="text-sm hover:text-accent transition-colors">Процедуры</button>
             <button onClick={() => scrollToSection('portfolio')} className="text-sm hover:text-accent transition-colors">Портфолио</button>
             <button onClick={() => scrollToSection('testimonials')} className="text-sm hover:text-accent transition-colors">Отзывы</button>
+            <button onClick={() => scrollToSection('certificates')} className="text-sm hover:text-accent transition-colors">Сертификаты</button>
             <button onClick={() => scrollToSection('contact')} className="text-sm hover:text-accent transition-colors">Контакты</button>
           </div>
           <Button onClick={() => scrollToSection('booking')} size="sm">Записаться</Button>
@@ -250,6 +251,56 @@ const Index = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16 animate-fade-in">
+            <p className="text-accent text-sm uppercase tracking-wider mb-3">Образование</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Сертификаты и дипломы</h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Подтвержденная квалификация и постоянное повышение профессионального уровня
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 animate-scale-in">
+              <CardContent className="p-0">
+                <img 
+                  src="https://cdn.poehali.dev/projects/39f9aadf-363b-4525-b734-31243bad6e64/files/ffbcd453-ee30-420d-a476-9656df9d96d1.jpg" 
+                  alt="Диплом косметолога" 
+                  className="w-full h-80 object-cover"
+                />
+                <div className="p-4">
+                  <h4 className="font-semibold text-center">Диплом врача-косметолога</h4>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '0.1s' }}>
+              <CardContent className="p-0">
+                <img 
+                  src="https://cdn.poehali.dev/projects/39f9aadf-363b-4525-b734-31243bad6e64/files/b41b0ccd-8102-42cb-9f8a-f042f6d358ed.jpg" 
+                  alt="Сертификат косметологии" 
+                  className="w-full h-80 object-cover"
+                />
+                <div className="p-4">
+                  <h4 className="font-semibold text-center">Сертификат по эстетической косметологии</h4>
+                </div>
+              </CardContent>
+            </Card>
+            <Card className="overflow-hidden hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '0.2s' }}>
+              <CardContent className="p-0">
+                <img 
+                  src="https://cdn.poehali.dev/projects/39f9aadf-363b-4525-b734-31243bad6e64/files/44e29c3f-b34f-4592-9fbc-3073af05bb83.jpg" 
+                  alt="Сертификат повышения квалификации" 
+                  className="w-full h-80 object-cover"
+                />
+                <div className="p-4">
+                  <h4 className="font-semibold text-center">Повышение квалификации</h4>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
