@@ -125,8 +125,7 @@ const Index = () => {
                 Руслана<br />Мишина
               </h1>
               <p className="text-lg text-muted-foreground mb-8 max-w-lg">
-                Кандидат медицинских наук. Создаю естественную красоту с заботой о вашем здоровье. 
-                Индивидуальный подход и современные методики.
+                Профессиональный косметолог с многолетним опытом. Помогаю раскрыть вашу естественную красоту и уверенность в себе.
               </p>
               <div className="flex gap-4 flex-wrap">
                 <Button onClick={() => scrollToSection('booking')} size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
