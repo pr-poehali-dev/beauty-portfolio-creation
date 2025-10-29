@@ -82,7 +82,10 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <nav className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-border z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-primary">Руслана Мишина</h1>
+          <div>
+            <h1 className="text-2xl font-bold text-primary">Руслана Мишина</h1>
+            <p className="text-xs text-accent">ruslana.pm-cosmetic.ru</p>
+          </div>
           <div className="hidden md:flex gap-8">
             <button onClick={() => scrollToSection('hero')} className="text-sm hover:text-accent transition-colors">Главная</button>
             <button onClick={() => scrollToSection('procedures')} className="text-sm hover:text-accent transition-colors">Процедуры</button>
@@ -338,6 +341,7 @@ const Index = () => {
             <div>
               <h3 className="text-2xl font-bold mb-2">Руслана Мишина</h3>
               <p className="text-primary-foreground/60 text-sm">Врач косметолог-дерматолог, КМН</p>
+              <p className="text-accent text-sm mt-1">ruslana.pm-cosmetic.ru</p>
             </div>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-accent/20 hover:bg-accent flex items-center justify-center transition-colors">
