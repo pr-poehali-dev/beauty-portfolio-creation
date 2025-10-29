@@ -136,6 +136,16 @@ const Index = () => {
                   Посмотреть работы
                 </Button>
               </div>
+              <div className="flex gap-3 mt-6">
+                <Button onClick={() => scrollToSection('booking')} variant="outline" size="sm">
+                  <Icon name="MapPin" className="mr-2" size={16} />
+                  Владивосток
+                </Button>
+                <Button onClick={() => scrollToSection('booking')} variant="outline" size="sm">
+                  <Icon name="MapPin" className="mr-2" size={16} />
+                  Восток-2
+                </Button>
+              </div>
               <div className="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-border">
                 <div>
                   <div className="text-3xl font-bold text-accent mb-1">15+</div>
