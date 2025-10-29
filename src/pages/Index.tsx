@@ -97,11 +97,14 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="hero" className="pt-20 min-h-screen flex items-center bg-gradient-to-br from-white to-secondary/30">
-        <div className="container mx-auto px-4 py-20">
+      <section id="hero" className="pt-20 min-h-screen flex items-center relative">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/39f9aadf-363b-4525-b734-31243bad6e64/files/660c0b15-bf2b-4665-8b1a-884a12f409f7.jpg)' }}>
+          <div className="absolute inset-0 bg-white/90 backdrop-blur-sm"></div>
+        </div>
+        <div className="container mx-auto px-4 py-20 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <p className="text-accent text-sm uppercase tracking-wider mb-4">Врач косметолог-дерматолог</p>
+              <p className="text-accent text-sm uppercase tracking-wider mb-4">Врач косметолог</p>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 Руслана<br />Мишина
               </h1>
@@ -340,7 +343,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div>
               <h3 className="text-2xl font-bold mb-2">Руслана Мишина</h3>
-              <p className="text-primary-foreground/60 text-sm">Врач косметолог-дерматолог, КМН</p>
+              <p className="text-primary-foreground/60 text-sm">Врач косметолог, КМН</p>
               <p className="text-accent text-sm mt-1">ruslana.pm-cosmetic.ru</p>
             </div>
             <div className="flex gap-4">
