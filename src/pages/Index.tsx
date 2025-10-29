@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -9,6 +9,15 @@ import Icon from '@/components/ui/icon';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('hero');
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const procedures = [
     {
@@ -97,8 +106,14 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="hero" className="pt-20 min-h-screen flex items-center relative">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(https://cdn.poehali.dev/projects/39f9aadf-363b-4525-b734-31243bad6e64/files/97cee2f3-e500-4b2d-bffa-3d3054bffe28.jpg)' }}>
+      <section id="hero" className="pt-20 min-h-screen flex items-center relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center transition-transform duration-100" 
+          style={{ 
+            backgroundImage: 'url(https://cdn.poehali.dev/projects/39f9aadf-363b-4525-b734-31243bad6e64/files/97cee2f3-e500-4b2d-bffa-3d3054bffe28.jpg)',
+            transform: `translateY(${scrollY * 0.5}px)`
+          }}
+        >
           <div className="absolute inset-0 bg-white/75 backdrop-blur-sm"></div>
         </div>
         <div className="container mx-auto px-4 py-20 relative z-10">
